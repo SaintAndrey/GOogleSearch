@@ -6,7 +6,7 @@
 //  Copyright © 2017 Andrey. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "WebViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    NSString *google = @"http://www.gogle.com";
+    NSURL *urlGoogle = [NSURL URLWithString:google];
+    NSURLRequest *requestGoogle = [NSURLRequest requestWithURL:urlGoogle];
+    [_webView loadRequest:requestGoogle];
 }
 
 
