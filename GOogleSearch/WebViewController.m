@@ -8,11 +8,11 @@
 
 #import "WebViewController.h"
 
-@interface ViewController ()
+@interface WebViewController ()
 
 @end
 
-@implementation ViewController
+@implementation WebViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
